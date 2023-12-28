@@ -12,7 +12,7 @@ body{
     background-position: center center;
     background-repeat:no-repeat;
     background-size: max(2000px,120vw);
-    background-image: url(/images/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-image: url(images/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg);
     border-bottom:#232323 solid 7px;
 }
 .box{
