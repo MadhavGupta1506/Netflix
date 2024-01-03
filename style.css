@@ -1,31 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Roboto+Condensed:wght@400;700&display=swap');
-*{
+
+* {
     margin: 0;
+    font-family: "Gill Sans", sans-serif;
     padding: 0;
 }
-body{
+
+body {
     background-color: black;
 }
-.main{
+
+.main {
     position: relative;
     height: 90vh;
     background-position: center center;
-    background-repeat:no-repeat;
-    background-size: max(2000px,120vw);
-    background-image: url(./images/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg);
-    border-bottom:#232323 solid 7px;
+    background-repeat: no-repeat;
+    background-size: max(1500px, 120vw);
+    background-image: url(/images/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    /* border-bottom: #232323 solid 7px; */
 }
-.box{
-    position:absolute;
-    top:0;
+
+.box {
+    position: absolute;
+    top: 0;
     background-color: black;
     height: 90vh;
     width: 100%;
     opacity: 55%;
 }
-nav{
+
+nav {
     position: relative;
-    top:17px;
+    top: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,15 +39,18 @@ nav{
     margin: auto;
     height: 62px;
 }
-nav img{
+
+nav img {
     position: relative;
     z-index: 10;
 }
-nav button{
+
+nav button {
     position: relative;
     z-index: 10;
 }
-.hero{
+
+.hero {
     height: 100%;
     display: flex;
     align-items: center;
@@ -49,31 +58,35 @@ nav button{
     flex-direction: column;
     color: white;
     position: relative;
-    font-family: "Gill Sans", sans-serif;
-    gap:19px;
+
+    gap: 19px;
     padding: 23px;
     text-align: center;
 }
-.hero> :nth-child(1){
+
+.hero> :nth-child(1) {
     font-weight: 900;
-    font-size: 42px; 
+    font-size: 42px;
 }
-.hero> :nth-child(2){
+
+.hero> :nth-child(2) {
     font-weight: 500;
     font-size: 25px;
 }
-.btn{
+
+.btn {
     padding: 3px 24px;
     font-size: 15px;
     background-color: rgba(43, 40, 40, 0.7);
-    border-radius:5px;
-    border-color:rgb(164, 153, 153); 
+    border-radius: 5px;
+    border-color: rgb(164, 153, 153);
     border-width: 1px;
     color: white;
     font-weight: bold;
 
 }
-.btn-red{
+
+.btn-red {
     font-size: 20px;
     font-weight: lighter;
     border-color: gray;
@@ -81,24 +94,105 @@ nav button{
     height: 45px;
     color: white;
     position: relative;
-    top:3px;
-    border-width:1px ;
+    top: 3px;
+    border-width: 1px;
 }
-.btn-red-sm{
+
+.btn-red-sm {
     border-color: gray;
     background-color: red;
     color: white;
-    font-weight:lighter;
+    font-weight: lighter;
 }
-input::placeholder{
+
+input::placeholder {
     color: rgb(193, 184, 184);
 }
-.main input{
+
+.main input {
     padding: 3px 140px 2px 10px;
-    font-size:12px;
+    font-size: 12px;
     font-weight: bold;
-    border-radius:5px;
+    border-radius: 5px;
     height: 36px;
     color: white;
-    background-color: rgba(23,23,23,.4);
+    background-color: rgba(23, 23, 23, .4);
+}
+
+.First {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 80vw;
+    color: white;
+    margin: auto;
+    height: 33vw;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+
+    position: relative;
+    z-index: 10;
+    height: 280px
+}
+
+.secImg video {
+    position: absolute;
+    top: 58px;
+    right: 55px;
+    max-height: 131%;
+    max-width: 72%;
+}
+.First> div{
+    display: flex;
+    flex-direction: column;
+}
+.First> div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.First> div :nth-child(2){
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.seperation{
+    border-bottom: #353434 solid 8px;
+}
+.third>.secImg >video{
+    position: absolute;
+    top: 20px;
+    max-height: 49%;
+    right: 71px;
+
+}
+.faq{
+    background-color: black;
+    color: white;
+}
+.faq-box:hover{
+    background-color: #464646;
+}
+.faq h2{
+    text-align: center;
+    padding-top:34px ;
+    font-size: 44px;
+    font-weight: 800;
+    margin: 12px 0px 20px 0px;
+}
+.faq-box{
+    transition: all .3s ease-in;
+    display: flex;
+    padding: 28px;
+    justify-content: space-between;
+    max-width: 75vw;
+    font-size: 24px;
+    background-color: #2d2d2d;
+    margin: 8px auto;
+    cursor: pointer;
 }
