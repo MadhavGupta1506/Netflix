@@ -16,7 +16,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1500px, 120vw);
-    background-image: url(./images/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-image: url(/images/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg);
     /* border-bottom: #232323 solid 7px; */
 }
 
@@ -162,6 +162,8 @@ input::placeholder {
     letter-spacing: 1px;
 }
 .seperation{
+    position: relative;
+    z-index: 10;
     border-bottom: #353434 solid 8px;
 }
 .third>.secImg >video{
@@ -195,4 +197,33 @@ input::placeholder {
     background-color: #2d2d2d;
     margin: 8px auto;
     cursor: pointer;
+}
+
+footer{
+    color:white;
+    max-width: 60vw;
+    margin: auto;
+    /* padding: 14px; */
+
+}
+.questions{
+    padding: 24px 0px;
+}
+.footer a{
+    color: white;
+    font-size: 15px;
+    margin: 12px;
+}
+.footer{
+    display: grid;
+    margin: 8px;
+    color: rgb(81, 78, 78);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+}
+.questions span{
+    text-decoration: underline;
 }
